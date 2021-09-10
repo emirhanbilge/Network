@@ -1,5 +1,5 @@
 echo 1234 | sudo -S su
-sudo echo "cd /home/pi/EbbScripts/ModbusScd" >> serverRunner.sh
+sudo echo "cd /home/pi/EbbScripts/ModbusScd" >> running.sh
 sudo echo "sudo python3 main.py" >> running.sh
 sudo crontab -l > crontab_new2
 sudo echo "@reboot /home/pi/EbbScripts/Network/running.sh" >> crontab_new2
