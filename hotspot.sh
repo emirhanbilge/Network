@@ -3,10 +3,10 @@
 ########################### First Setupın Crontaba Eklenmesi ##########################
 echo 1234 | sudo -S su
 sudo crontab -l > crontab_new5
-echo "@reboot python3 /home/pi/EbbScripts/Network/FirstSetup/startSetup.sh" >> crontab_new
+echo "@reboot /home/pi/Desktop/EbbScripts/Network/FirstSetup/startSetup.sh" > crontab_new5
 sudo crontab crontab_new5
 sudo rm crontab_new5
-sudo chmod +x /home/pi/EbbScripts/Network/FirstSetup/startSetup.sh
+sudo chmod +x /home/pi/Desktop/EbbScripts/Network/FirstSetup/startSetup.sh
 ##############################################################################################
 
 
